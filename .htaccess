@@ -1,0 +1,6 @@
+# Turn on the rewrite engine
+RewriteEngine On
+
+# Deny access to specific directories
+RewriteRule ^database/ - [F,L]
+RewriteRule ^.git/ - [F,L]
